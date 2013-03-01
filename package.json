@@ -4,7 +4,8 @@
   "author": "Pedro Rogério <pinceladasdaweb@hotmail.com>",
   "description": "A example to loading basic HTML in NodeJS",
   "engines":{
-    "node": "0.8.x"
+    "node": "0.8.x",
+    "npm": "1.1.x"
   },
   "dependencies": {
     "node-static": "*"
