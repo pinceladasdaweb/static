@@ -1,14 +1,13 @@
-var http = require('http');
-var static = require('node-static');
-var app = http.createServer(handler);
-
-var port = process.env.PORT || 3000;
-var files = new static.Server('./public');
+var http   = require('http'),
+	static = require('node-static'),
+	app    = http.createServer(handler),
+	port   = process.env.PORT || 3000,
+	files  = new static.Server('./public', { cache: 7200 });
 
 function handler(request, response) {
     request.addListener('end', function() {
         files.serve(request, response);
-    });
+    }).resume();
 }
 
 app.listen(port);
