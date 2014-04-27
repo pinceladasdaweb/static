@@ -1,6 +1,6 @@
 {
   "name": "static",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Pedro Rogério <pinceladasdaweb@hotmail.com>",
   "description": "A example to loading basic HTML in NodeJS",
   "engines":{
