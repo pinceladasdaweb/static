@@ -1,8 +1,8 @@
 var http   = require('http'),
-	static = require('node-static'),
-	app    = http.createServer(handler),
-	port   = process.env.PORT || 3000,
-	files  = new static.Server('./public', { cache: 7200 });
+    static = require('node-static'),
+    app    = http.createServer(handler),
+    port   = process.env.PORT || 3000,
+    files  = new static.Server('./public', { cache: 7200 });
 
 function handler(request, response) {
     request.addListener('end', function() {
